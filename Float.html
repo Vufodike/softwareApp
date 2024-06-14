@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .float-left {
+    float: left;
+    width: 33.33%; /* Adjust the width as needed */
+    /* Add other styles as needed */
+  }
+  /* Clearfix to prevent issues with floating elements */
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+</style>
+</head>
+<body>
+
+<div class="float-left">Content for first div</div>
+<div class="float-left">Content for second div</div>
+<div class="float-left">Content for third div</div>
+<div class="clearfix"></div> <!-- Clearfix -->
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    </script>
+    <h1>Hello Vivian!</h1>
+
+    <h2>Can you use JavaScript to Change Text</h2>
+<p>Yes i can, watch my code below":</p>
+
+
+<p id="demo"></p>
+<script>
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+    document.getElementById("demo").style.fontSize = "10px";
+    document.getElementById("demo").style.color = "red";
+    document.getElementById("demo").style.fontFamily = "Arial";
+    document.getElementById("demo").style.fontWeight = "bold";
+    document.getElementById("demo").style.backgroundColor = "Yellow"
+  }
+</script>
+<script>
+  function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "/bulb_on.png"
+  } else {
+    pic = "bulb-off.png"
+  }
+  document.getElementById('myImage').src = pic;
+  }
+</script>
+
+<img id="myImage" src="/bulb_on.png" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light Off</button>
+<button type="button" onclick="light(0)">Light On</button>
+</p>
+
+</body>
+</html>
